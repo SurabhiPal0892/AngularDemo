@@ -1,4 +1,11 @@
 /* Add application styles & imports to this file! */
 * {
-  width: 1340px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
 }
