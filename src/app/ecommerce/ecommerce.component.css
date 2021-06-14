@@ -25,6 +25,7 @@ select option {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  font-size: 100%;
 }
 
 .product-grid {
@@ -34,6 +35,7 @@ select option {
   flex-grow: 1;
   margin: 15px 0px 15px 20px;
 }
+
 .product-list {
   height: 300px;
   box-shadow: 1px 1px 1px 1px #ccc;
@@ -56,10 +58,26 @@ select option {
 
 .product-desc-section {
   height: 30%;
-  padding: 2px;
+  padding: 10px 0px 10px 10px;
 }
 
-h4 {
+.product-desc-section h4 {
   display: inline-block;
   word-wrap: break-word;
+  margin-bottom: 10px;
 }
+
+.product-desc-section p {
+  color: green;
+  font-weight: 800;
+}
+.product-desc-section p::before {
+  content: 'Rs ';
+  color: green;
+}
+/* .product-rating {
+  background-color: rgb(227, 235, 218);
+  color: green;
+  width: 10%;
+  padding: 5px;
+} */
