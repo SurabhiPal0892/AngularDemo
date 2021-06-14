@@ -45,5 +45,7 @@ select option {
   width: auto;
   height: auto;
   max-width: 100%;
+  margin: auto;
   max-height: 100%;
+  display: block;
 }
