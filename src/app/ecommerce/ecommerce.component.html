@@ -11,7 +11,13 @@
   </div>
   <div class="products-layout">
     <div [ngClass]="layout=='List'? 'product-list':'product-grid'" *ngFor="let product of products">
-      <img src={{product.img_url}} alt={{product.title}} class="product-img">
+      <div class="product-img-section">
+        <img src={{product.img_url}} alt={{product.title}} class="product-img">
+      </div>
+      <div class="product-desc-section">
+        <h4>{{product.title}}</h4>
+        <span>{{product.price}}</span>
+      </div>
     </div>
   </div>
 </div>

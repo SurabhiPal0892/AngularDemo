@@ -35,7 +35,7 @@ select option {
   margin: 15px 0px 15px 20px;
 }
 .product-list {
-  height: 200px;
+  height: 300px;
   box-shadow: 1px 1px 1px 1px #ccc;
   width: 45%;
   flex-grow: 1;
@@ -48,4 +48,18 @@ select option {
   margin: auto;
   max-height: 100%;
   display: block;
+}
+
+.product-img-section {
+  height: 70%;
+}
+
+.product-desc-section {
+  height: 30%;
+  padding: 2px;
+}
+
+h4 {
+  display: inline-block;
+  word-wrap: break-word;
 }
