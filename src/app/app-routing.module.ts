@@ -4,10 +4,10 @@ import { UiDesignComponent } from './ui-design/ui-design.component';
 import { EcommerceComponent } from './ecommerce/ecommerce.component';
 
 @NgModule({
-  declarations: [UiDesignComponent, EcommerceComponent],
+  declarations: [],
   imports: [
     RouterModule.forRoot([
-      { path: 'banner', component: UiDesignComponent },
+      { path: '', component: UiDesignComponent },
       { path: 'ecommerce', component: EcommerceComponent }
     ])
   ],

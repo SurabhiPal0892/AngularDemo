@@ -1,0 +1,49 @@
+.container {
+  margin: 50px;
+}
+
+.filters {
+  text-align: right;
+}
+
+.btn-grid,
+.btn-list {
+  padding: 5px;
+  margin: 1px;
+}
+
+.dropdown-price {
+  padding: 5px;
+  margin: 10px 0px 10px 10px;
+}
+
+select option {
+  padding: 2px;
+}
+
+.products-layout {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-grid {
+  height: 200px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  width: 22%;
+  flex-grow: 1;
+  margin: 15px 0px 15px 20px;
+}
+.product-list {
+  height: 200px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  width: 45%;
+  flex-grow: 1;
+  margin: 15px 0px 15px 20px;
+}
+.product-img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}

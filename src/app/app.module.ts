@@ -8,7 +8,7 @@ import { EcommerceComponent } from './ecommerce/ecommerce.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule,AppRoutingModule],
   declarations: [AppComponent, UiDesignComponent, EcommerceComponent],
   bootstrap: [AppComponent]
 })

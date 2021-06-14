@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { products_sample_data } from '../data';
 
 @Component({
   selector: 'app-ecommerce',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ecommerce.component.css']
 })
 export class EcommerceComponent implements OnInit {
-
-  constructor() { }
-
+  products = [];
+  layout = 'Grid';
+  constructor() {}
   ngOnInit() {
+    this.products = products_sample_data;
   }
-
+  switchToGridLayout() {
+    this.layout = 'Grid';
+  }
+  switchToListLayout() {
+    this.layout = 'List';
+  }
 }

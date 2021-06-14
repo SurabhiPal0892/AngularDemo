@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="filters">
+    <button class="btn-grid" (click)="switchToGridLayout()">Grid</button>
+    <button class="btn-list" (click)="switchToListLayout()">List</button>
+    <select class="dropdown-price">
+      <option selected hidden>Filter by price range</option>
+      <option></option>
+      <option>0-500</option>
+      <option>501-1000</option>
+    </select>
+  </div>
+  <div class="products-layout">
+    <div [ngClass]="layout=='List'? 'product-list':'product-grid'" *ngFor="let product of products">
+      <img src={{product.img_url}} alt={{product.title}} class="product-img">
+    </div>
+  </div>
+</div>
