@@ -3,6 +3,7 @@
   <input type="number" #timeLimit>
 </p>
 <p>
-  <button class="btn" (click)=valueChanged(timeLimit.value)>{{btnName}}</button>
-  <button class="btn" (click)=resetTimer(timeLimit.value)>Reset</button>
+  <button class="btn" (click)=startClicked(timeLimit.value)>Start</button>
+  <button class="btn" (click)=pauseClicked()>Pause</button>
+  <button class="btn" (click)=resetClicked(timeLimit.value)>Reset</button>
 </p>

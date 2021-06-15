@@ -1,14 +1,16 @@
 <div class="container">
   <div class="box">
-    <app-countdown-timer countdown={{countdownTimer}}></app-countdown-timer>
+    <app-countdown-timer timer={{countdownTimer}} pause={{isPaused}} start={{isStart}}></app-countdown-timer>
   </div>
   <div class="box">
-    <app-timer-reset (valueChange)=displayCounter($event)></app-timer-reset>
+    <app-timer-reset (timelimit)="getTimer($event)" (isPaused)="isPauseClicked($event)"
+      (isStart)="isStartClicked($event)">
+    </app-timer-reset>
   </div>
   <div class="box">
     <app-timer-log></app-timer-log>
   </div>
   <div class="box">
-    <app-click-counts></app-click-counts>
+    <app-click-counts (pauseClickCount)={{pauseClickCount}} (startClickCount)={{startClickCount}}></app-click-counts>
   </div>
 </div>

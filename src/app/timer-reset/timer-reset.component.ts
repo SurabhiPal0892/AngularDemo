@@ -6,25 +6,28 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./timer-reset.component.css']
 })
 export class TimerResetComponent implements OnInit {
-  @Output() valueChange = new EventEmitter();
-  btnName: string = 'Start';
+  @Output() timelimit = new EventEmitter();
+  @Output() isPaused = new EventEmitter();
+  @Output() isStart = new EventEmitter();
 
   constructor() {}
 
   ngOnInit() {}
 
-  valueChanged(timeLimit) {
-    // You can give any function name
-    if (this.btnName == 'Start') {
-      this.btnName = 'Pause';
-      this.valueChange.emit(timeLimit);
-    } else {
-      this.btnName = 'Start';
-      this.valueChange.emit('Stop');
-    }
+  startClicked(timeLimit) {
+    this.timelimit.emit(timeLimit);
+    this.isStart.emit('true');
+    this.isPaused.emit('false');
   }
 
-  resetTimer(timeLimit) {
-    this.valueChange.emit(timeLimit);
+  pauseClicked() {
+    this.isStart.emit('false');
+    this.isPaused.emit('true');
+  }
+
+  resetClicked(timeLimit) {
+    this.timelimit.emit(timeLimit);
+    this.isStart.emit('false');
+    this.isPaused.emit('false');
   }
 }
