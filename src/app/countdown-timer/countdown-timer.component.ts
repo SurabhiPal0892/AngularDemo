@@ -12,6 +12,7 @@ export class CountdownTimerComponent implements OnInit {
   interval: number;
   previousValue: any;
   countdown: any;
+  newTimer: any;
 
   constructor() {}
 
@@ -27,9 +28,7 @@ export class CountdownTimerComponent implements OnInit {
     }
   }
 
-  resetTimer() {
-    console.log(this.timer);
-  }
+  resetTimer() {}
 
   pauseTimer() {
     clearInterval(this.interval);

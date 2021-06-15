@@ -21,6 +21,7 @@ export class TimerResetComponent implements OnInit {
   }
 
   pauseClicked() {
+    // this.timelimit.emit(0);
     this.isStart.emit('false');
     this.isPaused.emit('true');
   }
