@@ -1,8 +1,8 @@
 <p>
   <label>Enter Timer Limit</label>&nbsp;
-  <input type="number" >
+  <input type="number" #timeLimit>
 </p>
 <p>
-  <button class="btn">Start/Pause</button>
+  <button class="btn" (click)=valueChanged(timeLimit.value)>{{btnName}}</button>
   <button class="btn">Reset</button>
 </p>

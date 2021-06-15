@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timer.component.css']
 })
 export class TimerComponent implements OnInit {
+  countdownTimer: any;
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  displayCounter(count) {
+    this.countdownTimer = count;
+    console.log(this.countdownTimer);
   }
-
 }

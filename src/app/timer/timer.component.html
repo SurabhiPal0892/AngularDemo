@@ -1,9 +1,9 @@
 <div class="container">
   <div class="box">
-    <app-countdown-timer></app-countdown-timer>
+    <app-countdown-timer countdown={{countdownTimer}}></app-countdown-timer>
   </div>
   <div class="box">
-    <app-timer-reset></app-timer-reset>
+    <app-timer-reset (valueChange)=displayCounter($event)></app-timer-reset>
   </div>
   <div class="box">
     <app-timer-log></app-timer-log>
