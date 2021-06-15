@@ -23,4 +23,8 @@ export class TimerResetComponent implements OnInit {
       this.valueChange.emit('Stop');
     }
   }
+
+  resetTimer(timeLimit) {
+    this.valueChange.emit(timeLimit);
+  }
 }

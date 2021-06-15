@@ -12,7 +12,6 @@ export class CountdownTimerComponent implements OnInit {
   interval: number;
   previousValue: any;
   timer: any;
-
   constructor() {}
 
   ngOnInit() {}
@@ -22,14 +21,6 @@ export class CountdownTimerComponent implements OnInit {
   }
 
   startTimer() {
-    this.interval = setInterval(() => {
-      if (this.countdown > 0) {
-        this.countdown--;
-        this.timer = this.countdown;
-      } else if (this.countdown == 'Stop') {
-        clearInterval(this.interval);
-        this.countdown = 0;
-      }
-    }, 1000);
+   
   }
 }
