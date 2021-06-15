@@ -1,6 +1,4 @@
-import { formatPercent } from '@angular/common';
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
-import { count } from 'rxjs/operators';
 
 @Component({
   selector: 'app-countdown-timer',
@@ -20,8 +18,6 @@ export class CountdownTimerComponent implements OnInit {
   ngOnInit() {}
 
   ngOnChanges(changes: SimpleChanges) {
-    this.countdown = this.timer;
-    console.log(this.start, this.pause);
     if (this.start == 'true' && this.pause == 'false') {
       this.startTimer();
     } else if (this.pause == 'true' && this.start == 'false') {
@@ -38,12 +34,11 @@ export class CountdownTimerComponent implements OnInit {
   pauseTimer() {
     clearInterval(this.interval);
   }
+
   startTimer() {
-    console.log('helllo');
     this.interval = setInterval(() => {
-      if (this.countdown > 0) {
-        console.log(this.countdown);
-        this.countdown--;
+      if (this.timer > 0) {
+        this.timer--;
       }
     }, 1000);
   }

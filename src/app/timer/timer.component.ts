@@ -9,8 +9,8 @@ export class TimerComponent implements OnInit {
   countdownTimer: any;
   isPaused: any;
   isStart: any;
-  pauseClickCount: any = 0;
-  startClickCount: any = 0;
+  pauseCount: any = 0;
+  startCount: any = 0;
   constructor() {}
 
   ngOnInit() {}
@@ -21,11 +21,11 @@ export class TimerComponent implements OnInit {
 
   isPauseClicked(paused) {
     this.isPaused = paused;
-    this.pauseClickCount++;
+    this.pauseCount++;
   }
 
   isStartClicked(start) {
     this.isStart = start;
-    this.startClickCount++;
+    this.startCount++;
   }
 }
