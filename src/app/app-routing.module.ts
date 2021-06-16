@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { UiDesignComponent } from './ui-design/ui-design.component';
 import { EcommerceComponent } from './ecommerce/ecommerce.component';
 import { TimerComponent } from './timer/timer.component';
+import { StudentsMarksComponent } from './students-marks/students-marks.component';
 
 @NgModule({
   declarations: [],
@@ -10,7 +11,8 @@ import { TimerComponent } from './timer/timer.component';
     RouterModule.forRoot([
       { path: '', component: UiDesignComponent },
       { path: 'ecommerce', component: EcommerceComponent },
-      {path:'timer',component:TimerComponent}
+      {path:'timer',component:TimerComponent},
+      {path:'scorecard',component:StudentsMarksComponent}
     ])
   ],
   exports: [RouterModule],

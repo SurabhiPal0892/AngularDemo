@@ -10,10 +10,11 @@ import { TimerResetComponent } from './timer-reset/timer-reset.component';
 import { TimerLogComponent } from './timer-log/timer-log.component';
 import { ClickCountsComponent } from './click-counts/click-counts.component';
 import { TimerComponent } from './timer/timer.component';
+import { StudentsMarksComponent } from './students-marks/students-marks.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
-  declarations: [AppComponent, UiDesignComponent, EcommerceComponent, CountdownTimerComponent, TimerResetComponent, TimerLogComponent, ClickCountsComponent, TimerComponent],
+  declarations: [AppComponent, UiDesignComponent, EcommerceComponent, CountdownTimerComponent, TimerResetComponent, TimerLogComponent, ClickCountsComponent, TimerComponent, StudentsMarksComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
