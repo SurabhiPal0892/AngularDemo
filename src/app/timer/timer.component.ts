@@ -29,9 +29,11 @@ export class TimerComponent implements OnInit {
 
   getPauseCounts(counts) {
     this.pauseCount = counts;
+    console.log(this.pauseCount);
   }
 
   getStartCounts(counts) {
     this.startCount = counts;
+    console.log(this.startCount);
   }
 }
