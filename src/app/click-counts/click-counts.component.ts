@@ -11,4 +11,7 @@ export class ClickCountsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+  ngOnChanges(){
+    console.log(this.pauseCounts,this.startCounts)
+  }
 }

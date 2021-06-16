@@ -9,17 +9,21 @@ export class TimerLogComponent implements OnInit {
   @Input() pause: any;
   @Input() start: any;
   arr: any = [];
+  action: string;
   constructor() {}
 
   ngOnInit() {}
 
   ngOnChanges(changes: SimpleChanges) {
     let time = Date.now();
-    if (this.pause) {
-      this.arr.push(`${time}`);
+    let obj = {};
+    if (this.pause == 'true') {
+      obj = { action: 'Paused', time: time };
+      this.arr.push(obj);
     }
-    if (this.start) {
-      this.arr.push(`${time}`);
+    if (this.start == 'true') {
+      obj = { action: 'Started', time: time };
+      this.arr.push(obj);
     }
   }
 }
