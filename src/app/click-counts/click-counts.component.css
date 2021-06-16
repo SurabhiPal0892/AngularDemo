@@ -1,0 +1,6 @@
+.start-count,
+.pause-count {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}

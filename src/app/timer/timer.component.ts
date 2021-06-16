@@ -21,11 +21,17 @@ export class TimerComponent implements OnInit {
 
   isPauseClicked(paused) {
     this.isPaused = paused;
-    this.pauseCount++;
   }
 
   isStartClicked(start) {
     this.isStart = start;
-    this.startCount++;
+  }
+
+  getPauseCounts(counts) {
+    this.pauseCount = counts;
+  }
+
+  getStartCounts(counts) {
+    this.startCount = counts;
   }
 }
