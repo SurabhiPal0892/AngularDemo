@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { records } from '../students-marks';
 
 @Component({
   selector: 'app-students-marks',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./students-marks.component.css']
 })
 export class StudentsMarksComponent implements OnInit {
-
-  constructor() { }
-
+  headers: string[];
+  constructor() {}
+  studentRecords = records;
   ngOnInit() {
+    this.headers = Object.keys(this.studentRecords[0]);
   }
-
 }

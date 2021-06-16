@@ -1,12 +1,10 @@
 <div>
   <table>
     <tr>
-      <th *ngFor="let obj in studentRecords">{{obj}</th>
+      <th *ngFor="let header of headers">{{header}}</th>
     </tr>
     <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
+      <td *ngFor="let val of studentRecords">{{val}}</td>
     </tr>
   </table>
 
