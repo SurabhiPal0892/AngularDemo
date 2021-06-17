@@ -1,15 +1,17 @@
-.container {
+/* .container {
   margin: 30px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .dynamic-div {
   height: 200px;
   width: 200px;
-  border: 1px solid black;
+  border: 1px solid rgb(187, 152, 152);
   position: relative;
+  display: inline-block;
+  margin: 3px;
 }
 
 .btn {
@@ -18,9 +20,21 @@
 }
 
 .example-viewport {
-  width: 100%;
-  margin-left: 50px;
+  width: 100vh;
+  height: 1000px;
+  margin: 5px;
   border: 1px solid saddlebrown;
   display: flex;
   flex-wrap: wrap;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.example-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example-viewport {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
