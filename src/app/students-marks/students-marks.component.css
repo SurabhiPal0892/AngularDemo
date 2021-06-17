@@ -15,6 +15,7 @@ th {
   background-color: beige;
 }
 
-td:first-child,td:nth-child(3) {
+td:first-child,
+td:nth-child(3) {
   text-align: left;
 }
