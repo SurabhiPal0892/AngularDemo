@@ -12,10 +12,22 @@ import { ClickCountsComponent } from './click-counts/click-counts.component';
 import { TimerComponent } from './timer/timer.component';
 import { StudentsMarksComponent } from './students-marks/students-marks.component';
 import { DynamicDivsComponent } from './dynamic-divs/dynamic-divs.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
-  declarations: [AppComponent, UiDesignComponent, EcommerceComponent, CountdownTimerComponent, TimerResetComponent, TimerLogComponent, ClickCountsComponent, TimerComponent, StudentsMarksComponent, DynamicDivsComponent],
+  imports: [BrowserModule, FormsModule, ScrollingModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    UiDesignComponent,
+    EcommerceComponent,
+    CountdownTimerComponent,
+    TimerResetComponent,
+    TimerLogComponent,
+    ClickCountsComponent,
+    TimerComponent,
+    StudentsMarksComponent,
+    DynamicDivsComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

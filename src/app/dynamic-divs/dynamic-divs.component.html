@@ -1,5 +1,13 @@
-<div class="container">
+<!-- <div class="container">
   <div class="dynamic-div">
     <button class="btn">Click Me</button>
   </div>
+</div> -->
+
+<div class="container">
+  <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
+    <div class="dynamic-div" *cdkVirtualFor="let i of list">
+      <button class="btn">Click Me</button>
+    </div>
+  </cdk-virtual-scroll-viewport>
 </div>
