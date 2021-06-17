@@ -1,10 +1,10 @@
 <div>
   <table>
     <tr>
-      <th *ngFor="let header of headers">{{header}}</th>
+      <th *ngFor="let header of headers">{{header | uppercase}}</th>
     </tr>
-    <tr>
-      <td *ngFor="let val of studentRecords">{{val}}</td>
+    <tr *ngFor="let val of studentRecords">
+      <td *ngFor="let header of headers">{{val[header]}}</td>
     </tr>
   </table>
 

@@ -13,50 +13,50 @@ export const records = [
     name: 'Jacob',
     class: '3',
     section: 'D',
-    maths: 33,
-    english: 40,
-    hindi: 45,
-    sanskrit: 50,
-    science: 43
+    maths: 34,
+    english: 20,
+    hindi: 48,
+    sanskrit: 35,
+    science: 49
   },
   {
     name: 'Kate',
     class: '3',
     section: 'C',
-    maths: 33,
-    english: 40,
-    hindi: 45,
-    sanskrit: 50,
-    science: 43
+    maths: 49,
+    english: 45,
+    hindi: 35,
+    sanskrit: 26,
+    science: 47
   },
   {
     name: 'William',
     class: '3',
     section: 'D',
-    maths: 33,
-    english: 40,
-    hindi: 45,
+    maths: 50,
+    english: 49,
+    hindi: 48,
     sanskrit: 50,
-    science: 43
+    science: 50
   },
   {
     name: 'Troy',
     class: '3',
     section: 'A',
-    maths: 33,
-    english: 40,
-    hindi: 45,
-    sanskrit: 50,
-    science: 43
+    maths: 50,
+    english: 50,
+    hindi: 48,
+    sanskrit: 49,
+    science: 50
   },
   {
     name: 'Helen',
     class: '3',
     section: 'C',
-    maths: 33,
+    maths: 24,
     english: 40,
-    hindi: 45,
-    sanskrit: 50,
-    science: 43
+    hindi: 49,
+    sanskrit: 29,
+    science: 13
   }
 ];
