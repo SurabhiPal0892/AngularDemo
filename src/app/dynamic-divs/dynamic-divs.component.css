@@ -11,7 +11,7 @@
   border: 1px solid rgb(187, 152, 152);
   position: relative;
   display: inline-block;
-  margin: 3px;
+  margin: 10px 10px 10px 12px;
 }
 
 .btn {
@@ -20,14 +20,13 @@
 }
 
 .example-viewport {
-  width: 100vh;
+  width: 215vh;
+  margin: 2px;
   height: 1000px;
-  margin: 5px;
   border: 1px solid saddlebrown;
   display: flex;
   flex-wrap: wrap;
   overflow-x: hidden;
-  box-sizing: border-box;
 }
 .example-viewport::-webkit-scrollbar {
   display: none;

@@ -74,4 +74,7 @@ export class DynamicDivsComponent implements OnInit {
   ];
   constructor() {}
   ngOnInit() {}
+  openAlert(index) {
+    alert(`Button in div ${index + 1} is clicked`);
+  }
 }
