@@ -1,11 +1,15 @@
+.container {
+  display: flex;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 60%;
+  margin: auto;
+  margin-top: 100px;
 }
 
-td,
-th {
+td {
   border: 1px solid #dddddd;
   padding: 8px;
   text-align: right;
@@ -13,6 +17,9 @@ th {
 
 th {
   background-color: beige;
+  text-align: left;
+  border: 1px solid #dddddd;
+  padding: 8px;
 }
 
 td:first-child,
