@@ -6,7 +6,7 @@ import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
   styleUrls: ['./countdown-timer.component.css']
 })
 export class CountdownTimerComponent implements OnInit {
-  @Input() timer: any;
+  @Input() timer: any = {};
   @Input() pause: any;
   @Input() start: any;
   interval: number;
@@ -16,14 +16,19 @@ export class CountdownTimerComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.timer = { time: 1000, isStart: 'false', isPaused: 'false' };
+  }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (this.start == 'true' && this.pause == 'false') {
+    if (this.timer.isStart == 'true' && this.timer.isPaused == 'false') {
       this.startTimer();
-    } else if (this.pause == 'true' && this.start == 'false') {
+    } else if (this.timer.isPaused == 'true' && this.timer.isStart == 'false') {
       this.pauseTimer();
-    } else if (this.pause == 'false' && this.start == 'false') {
+    } else if (
+      this.timer.isPaused == 'false' &&
+      this.timer.isStart == 'false'
+    ) {
       this.resetTimer();
     }
   }
@@ -36,8 +41,8 @@ export class CountdownTimerComponent implements OnInit {
 
   startTimer() {
     this.interval = setInterval(() => {
-      if (this.timer > 0) {
-        this.timer--;
+      if (this.timer.time > 0) {
+        this.timer.time--;
       }
     }, 1000);
   }

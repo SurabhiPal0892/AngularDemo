@@ -10,8 +10,7 @@ export class ClickCountsComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
-  ngOnChanges(changes: SimpleChanges) {
-    console.log(this.counts);
+  ngOnInit() {
+    this.counts = { start: 0, pause: 0 };
   }
 }
