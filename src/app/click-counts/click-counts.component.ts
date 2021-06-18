@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-click-counts',
@@ -6,12 +6,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./click-counts.component.css']
 })
 export class ClickCountsComponent implements OnInit {
-  @Input() pauseCounts: any;
-  @Input() startCounts: any;
+  @Input() counts: any = {};
+
   constructor() {}
 
   ngOnInit() {}
-  ngOnChanges() {
-    console.log(this.pauseCounts, this.startCounts);
+  ngOnChanges(changes: SimpleChanges) {
+    console.log(this.counts);
   }
 }
