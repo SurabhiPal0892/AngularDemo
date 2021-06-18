@@ -1,6 +1,6 @@
 <div class="container">
   <div class="box-border">
-    <app-countdown-timer [timer]=timer></app-countdown-timer>
+    <app-countdown-timer timer={{countdownTimer}} pause={{isPaused}} start={{isStart}}></app-countdown-timer>
   </div>
   <div class="box-border">
     <app-timer-reset (timelimit)="getTimer($event)" (isPaused)="isPauseClicked($event)"

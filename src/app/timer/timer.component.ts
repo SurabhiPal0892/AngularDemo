@@ -11,40 +11,24 @@ export class TimerComponent implements OnInit {
   isStart: any;
   pauseCount: any = 0;
   startCount: any = 0;
-  counts: { pause: any; start: any };
-  actionLog: { started: any; paused: any };
-  timer: { time: any; isStart: any; isPaused: any };
+  counts = { pause: 0, start: 0 };
+  actionLog = { started: 'false', paused: 'false' };
   constructor() {}
 
   ngOnInit() {}
 
   getTimer(count) {
     this.countdownTimer = count;
-    this.timer = {
-      time: this.countdownTimer,
-      isStart: this.isStart,
-      isPaused: this.isPaused
-    };
   }
 
   isPauseClicked(paused) {
     this.isPaused = paused;
     this.actionLog = { started: this.isStart, paused: this.isPaused };
-    this.timer = {
-      time: this.countdownTimer,
-      isStart: this.isStart,
-      isPaused: this.isPaused
-    };
   }
 
   isStartClicked(start) {
     this.isStart = start;
     this.actionLog = { started: this.isStart, paused: this.isPaused };
-    this.timer = {
-      time: this.countdownTimer,
-      isStart: this.isStart,
-      isPaused: this.isPaused
-    };
   }
 
   getPauseCounts(counts) {

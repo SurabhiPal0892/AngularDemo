@@ -11,6 +11,6 @@ export class ClickCountsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.counts = { start: 0, pause: 0 };
+    // this.counts = { start: 0, pause: 0 };
   }
 }
