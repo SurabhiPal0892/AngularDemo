@@ -1,13 +1,12 @@
 .container {
   width: 30%;
   transform: translate(120%, 50%);
-  background-color: rgba(230, 202, 44, 0.74);
-  box-shadow: 2px 2px 2px 2px rgba(230, 202, 44, 0.74);
+  background-color: rgb(65, 62, 62);
+  box-shadow: 1px 1px 1px 1px rgba(53, 52, 50, 0.74);
   padding: 30px;
 }
 
 .outer {
-  background-color: rgb(206, 171, 171);
   width: 100%;
   height: -webkit-fill-available;
 }
@@ -21,14 +20,15 @@ li {
   padding: 5px;
   font-size: 140%;
   width: 100%;
-  color: blue;
+  color: white;
 }
 
 li:hover {
   font-size: 150%;
   cursor: pointer;
+  background-color: rgb(120, 120, 248);
 }
 
 .quick-links {
-  text-decoration: underline;
+  color: white;
 }

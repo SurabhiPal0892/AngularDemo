@@ -15,15 +15,17 @@
 }
 
 .btn {
-  padding: 5px;
-  transform: translate(100%, 250%);
+  padding: 10px;
+  transform: translate(90%, 220%);
+  background-color: blue;
+  color: white;
+  border: none;
 }
 
 .example-viewport {
   width: 215vh;
   margin: 2px;
   height: 1000px;
-  border: 1px solid saddlebrown;
   display: flex;
   flex-wrap: wrap;
   overflow-x: hidden;
