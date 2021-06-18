@@ -32,7 +32,7 @@ select option {
   height: 200px;
   box-shadow: 1px 1px 1px 1px #ccc;
   width: 22%;
-  flex-grow: 1;
+  flex-grow: 0;
   margin: 15px 0px 15px 20px;
 }
 
@@ -40,7 +40,7 @@ select option {
   height: 300px;
   box-shadow: 1px 1px 1px 1px #ccc;
   width: 45%;
-  flex-grow: 1;
+  flex-grow: 0;
   margin: 15px 0px 15px 20px;
 }
 .product-img {
