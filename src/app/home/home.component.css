@@ -1,0 +1,18 @@
+.container {
+  width: 20%;
+  transform: translate(210%, 70%);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 5px;
+  font-size: 140%;
+  width: 100%;
+}
+
+li:hover {
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
