@@ -13,6 +13,7 @@ import { TimerComponent } from './timer/timer.component';
 import { StudentsMarksComponent } from './students-marks/students-marks.component';
 import { DynamicDivsComponent } from './dynamic-divs/dynamic-divs.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ScrollingModule, AppRoutingModule],
@@ -26,7 +27,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     ClickCountsComponent,
     TimerComponent,
     StudentsMarksComponent,
-    DynamicDivsComponent
+    DynamicDivsComponent,
+    HomeComponent
   ],
   bootstrap: [AppComponent]
 })
