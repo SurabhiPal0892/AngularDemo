@@ -25,23 +25,24 @@ select option {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  border-top: 1px solid rgb(233, 217, 217);
   font-size: 100%;
 }
 
 .product-grid {
   height: 200px;
   box-shadow: 1px 1px 1px 1px #ccc;
-  width: 22%;
+  width: 23%;
   flex-grow: 0;
-  margin: 15px 0px 15px 20px;
+  margin: 15px 4px 15px 20px;
 }
 
 .product-list {
   height: 300px;
   box-shadow: 1px 1px 1px 1px #ccc;
-  width: 45%;
+  width: 48%;
   flex-grow: 0;
-  margin: 15px 0px 15px 20px;
+  margin: 15px 4px 15px 20px;
 }
 .product-img {
   width: auto;
@@ -75,9 +76,13 @@ select option {
   content: 'Rs ';
   color: green;
 }
-/* .product-rating {
-  background-color: rgb(227, 235, 218);
-  color: green;
-  width: 10%;
-  padding: 5px;
-} */
+
+.no-products {
+  padding: 15px 20px 15px 20px;
+  font-size: 150%;
+  line-height: 0.5;
+  background-color: rgb(75, 65, 65);
+  color: white;
+  margin: 50px auto 0px auto;
+  border-radius: 20px;
+}

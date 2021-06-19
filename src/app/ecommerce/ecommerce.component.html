@@ -13,14 +13,19 @@
     </select>
   </div>
   <div class="products-layout">
-    <div [ngClass]="layout=='List'? 'product-list':'product-grid'" *ngFor="let product of productsDisplay">
-      <div class="product-img-section">
-        <img src={{product.img_url}} alt={{product.title}} class="product-img">
+    <ng-container *ngIf="productsDisplay.length>0;else noProducts">
+      <div [ngClass]="layout=='List'? 'product-list':'product-grid'" *ngFor="let product of productsDisplay">
+        <div class="product-img-section">
+          <img src={{product.img_url}} alt={{product.title}} class="product-img">
+        </div>
+        <div class="product-desc-section">
+          <h4>{{product.title}}</h4>
+          <p>{{product.price}}</p>
+        </div>
       </div>
-      <div class="product-desc-section">
-        <h4>{{product.title}}</h4>
-        <p>{{product.price}}</p>
-      </div>
-    </div>
+    </ng-container>
+    <ng-template #noProducts>
+      <p class="no-products">No products available</p>
+    </ng-template>
   </div>
 </div>
