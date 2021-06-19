@@ -12,7 +12,7 @@ export class TimerLogComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.actionLog = { started: false, paused: false };
+    this.actionLog = { started: 'false', paused: 'false' };
   }
 
   ngOnChanges(changes: SimpleChanges) {

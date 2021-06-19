@@ -16,7 +16,9 @@ export class CountdownTimerComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.timer = 1000;
+  }
 
   ngOnChanges(changes: SimpleChanges) {
     if (this.start == 'true' && this.pause == 'false') {
