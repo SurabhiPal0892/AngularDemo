@@ -15,6 +15,14 @@
   color: black;
   border: none;
 }
+.btn {
+  text-align: right;
+}
+.inp-time {
+  padding: 2px 0px 2px 0px;
+  width: 55%;
+  text-align:right
+}
 
 .container {
   height: 250px;

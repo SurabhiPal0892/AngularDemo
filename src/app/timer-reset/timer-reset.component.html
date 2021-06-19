@@ -1,10 +1,10 @@
 <div class="container">
   <div class="main">
     <p>
-      <label>Enter Timer Limit</label>&nbsp;
-      <input type="number" #timeLimit>
+      Enter Timer Limit&nbsp;
+      <input type="number" #timeLimit class="inp-time">
     </p>
-    <p>
+    <p class='btn'>
       <button class="btn-blue" (click)=startClicked(timeLimit.value)>Start</button>
       <button class="btn-grey" (click)=pauseClicked()>Pause</button>
       <button class="btn-grey" (click)=resetClicked(timeLimit.value)>Reset</button>
