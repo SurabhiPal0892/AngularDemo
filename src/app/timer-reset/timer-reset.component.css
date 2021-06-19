@@ -18,10 +18,13 @@
 .btn {
   text-align: right;
 }
+p {
+  font-weight: 500;
+}
 .inp-time {
   padding: 2px 0px 2px 0px;
   width: 55%;
-  text-align:right
+  text-align: right;
 }
 
 .container {
