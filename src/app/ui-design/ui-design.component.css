@@ -23,6 +23,7 @@
   animation: marquee 15s linear infinite;
   font-size: 130%;
   color: red;
+  font-weight: 800;
 }
 @keyframes marquee {
   0% {
