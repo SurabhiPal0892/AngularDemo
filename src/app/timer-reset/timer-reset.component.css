@@ -1,4 +1,30 @@
-.btn {
-  padding: 5px;
+.btn-blue,
+.btn-grey {
+  padding: 8px 10px 8px 10px;
   margin: 10px;
+}
+
+.btn-blue {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.btn-grey {
+  background-color:rgb(200, 194, 194);
+  color: black;
+  border: none;
+}
+
+.container {
+  height: 250px;
+  width: 100%;
+  position: relative;
+}
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%, -50%);
 }

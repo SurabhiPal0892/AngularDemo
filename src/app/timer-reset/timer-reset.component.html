@@ -1,9 +1,13 @@
-<p>
-  <label>Enter Timer Limit</label>&nbsp;
-  <input type="number" #timeLimit>
-</p>
-<p>
-  <button class="btn" (click)=startClicked(timeLimit.value)>Start</button>
-  <button class="btn" (click)=pauseClicked()>Pause</button>
-  <button class="btn" (click)=resetClicked(timeLimit.value)>Reset</button>
-</p>
+<div class="container">
+  <div class="main">
+    <p>
+      <label>Enter Timer Limit</label>&nbsp;
+      <input type="number" #timeLimit>
+    </p>
+    <p>
+      <button class="btn-blue" (click)=startClicked(timeLimit.value)>Start</button>
+      <button class="btn-grey" (click)=pauseClicked()>Pause</button>
+      <button class="btn-grey" (click)=resetClicked(timeLimit.value)>Reset</button>
+    </p>
+  </div>
+</div>
