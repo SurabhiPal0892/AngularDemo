@@ -1,19 +1,20 @@
 .container {
-  margin: 50px;
+  margin: 15px 50px 0px 50px;
 }
 
 .filters {
   text-align: right;
+  border-bottom: 2px solid rgb(211, 205, 205);
 }
 
 .btn-grid,
 .btn-list {
-  padding: 5px;
   margin: 1px;
 }
 
 .dropdown-price {
   padding: 5px;
+  height: 34px;
   margin: 10px 0px 10px 10px;
 }
 
@@ -24,14 +25,14 @@ select option {
 .products-layout {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
   width: 100%;
-  border-top: 1px solid rgb(233, 217, 217);
   font-size: 100%;
 }
 
 .product-grid {
   height: 200px;
-  box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow: 1px 0.5px 1px 0.5px #ccc;
   width: 23%;
   flex-grow: 0;
   margin: 15px 4px 15px 20px;
@@ -71,6 +72,7 @@ select option {
 .product-desc-section p {
   color: green;
   font-weight: 800;
+  line-height: 0.2;
 }
 .product-desc-section p::before {
   content: 'Rs ';
