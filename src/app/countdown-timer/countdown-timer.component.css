@@ -1,5 +1,5 @@
 .container {
-  height: 200px;
+  height: 250px;
   width: 100%;
   position: relative;
 }
@@ -9,4 +9,16 @@
   left: 50%;
   display: inline-block;
   transform: translate(-50%, -50%);
+}
+
+.timer-label {
+  font-size: 130%;
+}
+
+.timer-time {
+  margin: 10px 0px 0px 0px;
+  font-size: 250%;
+  color: green;
+  font-weight: 800;
+  text-align: center;
 }
