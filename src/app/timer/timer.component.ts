@@ -11,7 +11,7 @@ export class TimerComponent implements OnInit {
   isStart: any;
   pauseCount: any = 0;
   startCount: any = 0;
-  counts:any
+  counts: any;
   actionLog = { started: 'false', paused: 'false' };
   constructor() {}
 
