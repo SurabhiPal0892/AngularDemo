@@ -9,13 +9,18 @@
 
 .btn-grid,
 .btn-list {
-  margin: 1px;
+  margin-right: 5px;
 }
 
 .dropdown-price {
   padding: 5px;
   height: 34px;
   margin: 10px 0px 10px 10px;
+}
+
+select {
+  vertical-align: super;
+  font-size: 95%;
 }
 
 select option {
@@ -39,8 +44,8 @@ select option {
 }
 
 .product-list {
-  height: 300px;
-  box-shadow: 1px 1px 1px 1px #ccc;
+  height: 200px;
+  box-shadow: 1px 0.5px 1px 0.5px #ccc;
   width: 48%;
   flex-grow: 0;
   margin: 15px 4px 15px 20px;
@@ -55,12 +60,13 @@ select option {
 }
 
 .product-img-section {
-  height: 70%;
+  height: 75%;
 }
 
 .product-desc-section {
-  height: 30%;
-  padding: 10px 0px 10px 10px;
+  height: 25%;
+  padding: 5px 0px 10px 10px;
+  background-color: rgb(241, 239, 239);
 }
 
 .product-desc-section h4 {
