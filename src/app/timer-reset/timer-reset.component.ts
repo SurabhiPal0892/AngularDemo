@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-timer-reset',
@@ -6,19 +6,28 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./timer-reset.component.css']
 })
 export class TimerResetComponent implements OnInit {
-  @Output() timelimit = new EventEmitter();
+  @Output() timelimit = new EventEmitter<{ time: any }>();
   @Output() isPaused = new EventEmitter();
   @Output() isStart = new EventEmitter();
   @Output() pauseCounts = new EventEmitter();
   @Output() startCounts = new EventEmitter();
+  @Input() countdownTimer;
   pauseClick = 0;
   startClick = 0;
+  arr: any = [];
   constructor() {}
 
   ngOnInit() {}
 
+  ngOnChanges() {
+    if (this.pauseClick > 0) {
+      this.timelimit.emit(this.countdownTimer);
+      this.arr.push(`Paused at ${this.countdownTimer}`);
+    }
+  }
+
   startClicked(timeLimit) {
-    this.timelimit.emit(timeLimit);
+    this.timelimit.emit({ time: timeLimit });
     this.isStart.emit('true');
     this.isPaused.emit('false');
     this.startClick++;
@@ -26,15 +35,15 @@ export class TimerResetComponent implements OnInit {
   }
 
   pauseClicked() {
-    // this.timelimit.emit(0);
     this.isStart.emit('false');
     this.isPaused.emit('true');
     this.pauseClick++;
+    this.timelimit.emit({ time: this.countdownTimer });
     this.pauseCounts.emit(this.pauseClick);
   }
 
   resetClicked(timeLimit) {
-    this.timelimit.emit(timeLimit);
+    this.timelimit.emit({ time: timeLimit });
     this.isStart.emit('false');
     this.isPaused.emit('false');
     this.startClick = 0;

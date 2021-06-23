@@ -6,19 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timer.component.css']
 })
 export class TimerComponent implements OnInit {
-  countdownTimer: any;
+  countdownTimer = { time: 1000 };
   isPaused: any;
   isStart: any;
   pauseCount: any = 0;
   startCount: any = 0;
   counts: any;
   actionLog = { started: 'false', paused: 'false' };
+  updatedTimer: any;
+  nTime: any;
   constructor() {}
 
   ngOnInit() {}
 
+  getUpdatedTimer(updatedTimer) {
+    this.updatedTimer = updatedTimer;
+  }
+
   getTimer(count) {
-    this.countdownTimer = count;
+    this.nTime = count;
+    this.countdownTimer = { time: this.nTime };
   }
 
   isPauseClicked(paused) {

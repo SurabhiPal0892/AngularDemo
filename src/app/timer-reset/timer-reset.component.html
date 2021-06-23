@@ -9,5 +9,9 @@
       <button class="btn-grey" (click)=pauseClicked()>Pause</button>
       <button class="btn-grey" (click)=resetClicked(timeLimit.value)>Reset</button>
     </p>
+    <ng-container *ngFor="let i of arr">
+      <p>{{i}}</p>
+    </ng-container>
   </div>
+
 </div>

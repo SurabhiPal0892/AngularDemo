@@ -1,10 +1,12 @@
 <div class="container">
   <div class="box-border">
-    <app-countdown-timer timer={{countdownTimer}} pause={{isPaused}} start={{isStart}}></app-countdown-timer>
+    <app-countdown-timer [timer]="countdownTimer" [pause]="isPaused" [start]="isStart"
+      (updatedTimer)="getUpdatedTimer($event)"></app-countdown-timer>
   </div>
   <div class="box-border">
     <app-timer-reset (timelimit)="getTimer($event)" (isPaused)="isPauseClicked($event)"
-      (isStart)="isStartClicked($event)" (pauseCounts)="getPauseCounts($event)" (startCounts)="getStartCounts($event)">
+      (isStart)="isStartClicked($event)" (pauseCounts)="getPauseCounts($event)" (startCounts)="getStartCounts($event)"
+      [countdownTimer]="updatedTimer">
     </app-timer-reset>
   </div>
   <div class="box">
